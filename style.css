@@ -14,7 +14,8 @@
 body {
   background-color: var(--bg-100);
   color: var(--text-100);
-  padding: 10px 20px;
+  padding: 0 20px 10px;
+  margin: 0 10px 10px;
 }
 
 h1 {
@@ -26,6 +27,14 @@ a {
 }
 
 header {
+  background-color: var(--bg-100);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 20px 0;
+}
+
+nav {
   background-color: var(--bg-200);
   padding: 10px 30px;
   border-radius: 20px;
