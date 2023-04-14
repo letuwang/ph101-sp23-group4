@@ -10,3 +10,55 @@
   --bg-200: #ebebeb;
   --bg-300: #c2c2c2;
 }
+
+body {
+  background-color: var(--bg-100);
+  color: var(--text-100);
+  padding: 10px 20px;
+}
+
+h1 {
+  color: var(--primary-100);
+}
+
+a {
+  color: var(--accent-100);
+}
+
+header {
+  background-color: var(--bg-200);
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Add this line to evenly space items */
+}
+
+nav li:first-child {
+  margin-left: 0;
+  margin-right: auto; /* Add this line to push the first item to the left */
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: var(--text-100);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--text-200);
+}
