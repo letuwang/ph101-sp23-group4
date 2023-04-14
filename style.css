@@ -62,3 +62,14 @@ nav a.active,
 nav a:hover {
   color: var(--text-200);
 }
+
+body > footer {
+  color: var(--text-200);
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+body > footer p {
+  margin: 0;
+}
