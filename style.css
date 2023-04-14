@@ -36,12 +36,11 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between; /* Add this line to evenly space items */
 }
 
 nav li:first-child {
   margin-left: 0;
-  margin-right: auto; /* Add this line to push the first item to the left */
+  margin-right: auto;
 }
 
 nav li {
