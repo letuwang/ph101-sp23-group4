@@ -10,17 +10,13 @@
 }
 
 body {
+  font-family: proxima-nova, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
   background-color: var(--primary-300);
   color: var(--primary-800);
   margin: 0;
-}
-
-h1 {
-  color: var(--primary-900);
-}
-
-a {
-  color: var(--accent);
 }
 
 header {
@@ -30,6 +26,29 @@ header {
   z-index: 1;
   padding: 10px 30px;
   border-bottom: 3px solid var(--primary-900);
+  line-height: normal;
+}
+
+main {
+  padding: 0 30px;
+}
+
+body > footer {
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+body > footer p {
+  margin: 0;
+}
+
+h1 {
+  color: var(--primary-900);
+}
+
+a {
+  color: var(--accent);
 }
 
 nav ul {
@@ -46,6 +65,8 @@ nav li:first-child {
 
 nav li {
   margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
   padding: 10px 0;
 }
 
@@ -56,8 +77,6 @@ nav li:last-child {
 nav a {
   color: var(--primary-900);
   text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
   padding: 8px 12px;
   border: 2px solid transparent;
   border-radius: 5px;
@@ -67,14 +86,4 @@ nav a.active,
 nav a:hover {
   background-color: var(--accent);
   border-color: var(--primary-900);
-}
-
-body > footer {
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-}
-
-body > footer p {
-  margin: 0;
 }
