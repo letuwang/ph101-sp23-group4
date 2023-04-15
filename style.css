@@ -16,7 +16,6 @@ body {
   font-weight: 400;
   background-color: var(--primary-300);
   color: var(--primary-800);
-  margin: 0;
 }
 
 header {
