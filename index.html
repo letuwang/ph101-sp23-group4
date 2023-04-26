@@ -11,10 +11,14 @@
       <nav>
         <ul>
           <!-- TODO: Replace `home` with logo -->
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="mission.html">Mission</a></li>
+          <li>
+            <a href="index.html">
+              <img src="assets/Box1.png" alt="Logo" style="width: 50px; height: 50px;" />
+            </a>
+          </li>
+          <li><a href="mission.html">Our Mission</a></li>
           <li><a href="why.html">Why</a></li>
-          <li><a href="how.html">How</a></li>
+          <li><a href="how.html">How You Can Help</a></li>
           <li><a href="about.html">About Us</a></li>
         </ul>
       </nav>
@@ -22,8 +26,28 @@
 
     <main>
       <!-- TODO: Replace with actual content -->
-      <h1>Welcome to my website!</h1>
-      <p>This is a sample webpage with a navbar and a footer.</p>
+      <h1>RE-USE CARDBOARD BOXES!</h1>
+      <div>
+        <div>
+          <h2 style="padding-top: 15px">Climate change</h2>
+          <body>Climate change is real and its bad</body>
+        </div>
+        <div>
+          <h2 style="padding-top: 15px">Paper is not the solution</h2>
+          <body>replacing plastic with paper kinda sucks too :(</body>
+        </div>
+        <div>
+          <h2 style="padding-top: 15px">Most of consumed paper is packaging related</h2>
+          <body>cardboard and packing material make up around half of all paper consumed in the US.</body>
+        </div>
+        <div>
+          <h2 style="padding-top: 15px">So why not re-use perfectly fine, and clean boxes?</h2>
+          <body>yeah thats why im sayng too bro.</body>
+        </div>
+
+      </div>
+      
+      <p style="padding-top: 55px">This is a sample webpage with a navbar and a footer.</p>
     </main>
 
     <footer>
@@ -31,3 +55,16 @@
     </footer>
   </body>
 </html>
+
+nav a.active,
+nav a:hover {
+  background-color: var(--accent);
+  border-color: var(--primary-900);
+}
+
+/* Apply the styles only to navigation links, not the logo */
+nav a.active:not(.logo),
+nav a:hover:not(.logo) {
+  background-color: var(--accent);
+  border-color: var(--primary-900);
+}
