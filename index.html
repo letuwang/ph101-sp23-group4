@@ -13,24 +13,30 @@
           <!-- TODO: Replace `home` with logo -->
           <li>
             <a href="index.html">
-              <img src="assets/Box1.png" alt="Logo" style="width: 50px; height: 50px;" />
+              <img src="assets/Box1.png" alt="Logo" />
+              <h1>OBAAT</h1>
             </a>
           </li>
-          <li><a href="mission.html">Our Mission</a></li>
-          <li><a href="why.html">Why</a></li>
-          <li><a href="how.html">How You Can Help</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a class="nav-link" href="mission.html">Our Mission</a></li>
+          <li><a class="nav-link" href="why.html">Why</a></li>
+          <li><a class="nav-link" href="how.html">How You Can Help</a></li>
+          <li><a class="nav-link" href="about.html">About Us</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <!-- TODO: Replace with actual content -->
-      <h1>RE-USE CARDBOARD BOXES!</h1>
+      <h1 style="display: inline-block; border: 2px solid #502f00; border-radius: 10px; padding: 10px; margin-bottom: 15px; background-color: #bcbd8b; color: #502f00;">RE-USE CARDBOARD BOXES!</h1>
+
       <div>
         <div>
-          <h2 style="padding-top: 15px">Climate change</h2>
-          <body>Climate change is real and its bad</body>
+          <h2 style="padding-top: 15px;">Some Stats!</h2>
+          <ul style="font-size: 19px;">
+            <li style="padding-bottom: 11px;"><strong>Approximately 68%</strong> of all paper consumed in the United States in 2021 is used for packaging and cardboard purposes.</li>
+            <li style="padding-bottom: 11px;">The United States alone produces <strong>51 million metric ton</strong> of wrapping and packaging paper annually, which is equivalent to approximately <strong>184,000,000</strong> cardboard boxes.</li>
+            <li><strong>Another 3.3</strong> million metric tons of packaging paper and paperboard were imported into the United States.</li>
+          </ul>
         </div>
         <div>
           <h2 style="padding-top: 15px">Paper is not the solution</h2>
@@ -55,16 +61,3 @@
     </footer>
   </body>
 </html>
-
-nav a.active,
-nav a:hover {
-  background-color: var(--accent);
-  border-color: var(--primary-900);
-}
-
-/* Apply the styles only to navigation links, not the logo */
-nav a.active:not(.logo),
-nav a:hover:not(.logo) {
-  background-color: var(--accent);
-  border-color: var(--primary-900);
-}
