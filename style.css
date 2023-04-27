@@ -197,24 +197,56 @@ section {
 }
 
 #how-to-contribute {
-  padding: 20px;
+  padding: 40px 80px;
   background-color: var(--bg-200);
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.icon-list li {
+#how-to-contribute > ul {
   display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#how-to-contribute > ul > li:not(:last-child) {
   align-items: center;
   color: var(--text-200);
   font-size: 24px;
   font-weight: bold;
+  padding: 20px;
+  background-color: var(--bg-100);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  width: 240px;
 }
 
-.icon-list li i {
+#how-to-contribute > ul > li:last-child {
+  margin-left: 40px;
+  height: fit-content;
+}
+
+#how-to-contribute > ul > li:last-child > a {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  line-height: 1.2;
+}
+
+#how-to-contribute > ul > li i {
   font-size: 32px;
-  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+#how-to-contribute > ul > li svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--bg-100);
+  margin-top: 20px;
 }
 
 .green {
