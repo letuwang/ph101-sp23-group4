@@ -1,45 +1,84 @@
 @import "https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css";
 
 :root {
-  --primary-100: #fffffe;
-  --primary-200: #e8e4e6;
-  --primary-300: #eff1ed;
-  --primary-700: #717744;
-  --primary-800: #373d20;
-  --primary-900: #001e1d;
-  --accent: #bcbd8b;
-  --tertiary: #502f00;
+  --accent: #faae2b; /* Background of highlighted */
+  --primary-100: #d9b382;
+  --primary-200: #ba9667;
+  --primary-300: #75572b;
+  --accent-100: #a67c3f;
+  --accent-200: #462800;
+  --text-100: #4d4d4d;
+  --text-200: #140d0b;
+  --bg-100: #f5eccb;
+  --bg-200: #ebe2c1;
+  --bg-300: #c2ba9a;
 }
 
-nav span {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--primary-900);
-  line-height: 50px;
-  margin-left: 10px;
+body {
+  font-family: proxima-nova, sans-serif;
+  font-size: 19px;
+  line-height: 1.8;
+  font-weight: 400;
+  background-color: var(--bg-100);
+  color: var(--text-100);
 }
 
-/* Set the size and spacing of the logo */
-nav img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  outline: none; /* Remove the outline when the image is selected */
+header {
+  background-color: var(--bg-300);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0 30px;
+  border-bottom: 3px solid var(--primary-900);
+  line-height: normal;
 }
 
-nav img.logo {
-  border: none; /* Remove the border around the logo */
-}
-
-/* Style the navigation links */
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
+}
+
+nav li {
+  margin-left: 24px;
+  padding: 0; /* =padding(nav a) + border(nav a) */
+}
+
+nav li:first-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+nav a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--text-100);
+  padding: 12px 0;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 24px;
+}
+nav a.active,
+nav a:hover {
+  color: var(--text-200);
+}
+
+nav a.logo-anchor {
+  padding: 4px 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+/* Set the size and spacing of the logo */
+nav a.logo-anchor img {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  margin-right: 10px;
 }
 
 /* Style the button */
@@ -64,25 +103,6 @@ button:hover {
   color: #717744;
 }
 
-body {
-  font-family: proxima-nova, sans-serif;
-  font-size: 18px;
-  line-height: 1.8;
-  font-weight: 400;
-  background-color: var(--primary-300);
-  color: var(--primary-800);
-}
-
-header {
-  background-color: var(--primary-300);
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  padding: 10px 30px;
-  border-bottom: 3px solid var(--primary-900);
-  line-height: normal;
-}
-
 .main-container {
   padding: 0 30px;
 }
@@ -98,73 +118,11 @@ body > footer p {
 }
 
 h1 {
-  color: var(--primary-900);
+  color: var(--text-100);
 }
 
 a {
   color: var(--accent);
-}
-
-nav li:first-child {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-nav li {
-  margin-left: 20px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: 10px 0; /* =padding(nav a) + border(nav a) */
-}
-
-nav li:last-child {
-  margin-right: 0;
-}
-
-/* Apply the styles only to navigation links, not the logo */
-nav a:not(.logo):active,
-nav a:not(.logo):hover {
-  background-color: var(--accent);
-  border-color: var(--primary-900);
-}
-
-nav h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--primary-900);
-  line-height: 42.5px;
-}
-
-nav a {
-  color: var(--primary-900);
-  text-decoration: none;
-  padding: 8px 12px;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-}
-
-nav a:not(.nav-link):hover {
-  opacity: 0.8;
-}
-
-nav .nav-link {
-  border: 2px solid var(--tertiary);
-  border-radius: 5px;
-  padding: 8px 12px;
-  margin-left: 20px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-nav .nav-link:hover {
-  background-color: var(--accent);
-  border-color: var(--primary-900);
-  color: var(--primary-100);
 }
 
 .background-image {
