@@ -30,7 +30,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -182,18 +183,25 @@ section {
 
 .card {
   flex: 1;
-  margin: 0 0 0 20px;
   padding: 20px;
   background-color: var(--bg-200);
   border-radius: 10px;
 }
 
-.card:first-of-type {
-  margin-left: 0;
+.cards-container > .card:not(:first-child) {
+  margin-left: 20px;
 }
 
 .card h3 {
   font-size: 48px;
+}
+
+#how-to-contribute {
+  padding: 20px;
+  background-color: var(--bg-200);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .icon-list li {
@@ -202,7 +210,6 @@ section {
   color: var(--text-200);
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .icon-list li i {
