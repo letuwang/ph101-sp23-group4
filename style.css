@@ -97,7 +97,7 @@ body > footer p {
 main {
   padding: 0 30px;
 }
-/* 45% 15% */
+
 .landing {
   width: 100vw;
   height: calc(100vh - 48px);
@@ -109,7 +109,6 @@ main {
     url("assets/bg-image.jpg");
   background-size: cover;
   background-position: center;
-  /* opacity: 0.7; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +117,6 @@ main {
 .landing h1 {
   font-size: 112px;
   color: var(--accent-200);
-  /* text-shadow: 2px 2px 5px var(--accent-200); */
   text-align: center;
 }
 
@@ -145,9 +143,9 @@ button:hover {
 }
 
 h1 {
-  color: var(--text-100);
+  color: var(--text-200);
 }
 
 a {
-  color: var(--accent);
+  color: var(--accent-100);
 }
