@@ -1,5 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css";
 
+/* Base styles */
 :root {
   --accent: #faae2b; /* Background of highlighted */
   --primary-100: #d9b382;
@@ -7,8 +8,10 @@
   --primary-300: #75572b;
   --accent-100: #a67c3f;
   --accent-200: #462800;
-  --text-100: #4d4d4d;
-  --text-200: #140d0b;
+  /* --text-100: #4d4d4d; */
+  /* --text-200: #140d0b; */
+  --text-100: #797979;
+  --text-200: #4d4d4d;
   --bg-100: #f5eccb;
   --bg-200: #ebe2c1;
   --bg-300: #c2ba9a;
@@ -21,6 +24,30 @@ body {
   font-weight: 400;
   background-color: var(--bg-100);
   color: var(--text-100);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  color: var(--accent-200);
+  font-weight: bold;
+}
+
+h3,
+h4 {
+  color: var(--text-200);
+}
+
+a {
+  color: var(--accent-100);
 }
 
 /* Header styles */
@@ -56,7 +83,7 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: var(--text-100);
+  color: var(--text-200);
   padding: 12px 0;
   font-size: 21px;
   font-weight: bold;
@@ -72,7 +99,7 @@ nav a.logo-anchor {
 
 nav a.active,
 nav a:hover {
-  color: var(--text-200);
+  color: var(--accent-200);
 }
 
 nav a.logo-anchor img {
@@ -102,17 +129,6 @@ section {
   margin: 15px 0;
 }
 
-h1,
-h2 {
-  margin: 0;
-  padding: 0;
-  color: var(--text-200);
-}
-
-a {
-  color: var(--accent-100);
-}
-
 .landing {
   width: 100vw;
   height: calc(100vh - 48px);
@@ -131,8 +147,32 @@ a {
 
 .landing h1 {
   font-size: 112px;
-  color: var(--accent-200);
   text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  margin: 0 0 0 20px;
+  padding: 20px;
+  background-color: var(--bg-200);
+  border-radius: 10px;
+}
+
+.card:first-of-type {
+  margin-left: 0;
+}
+
+.card h2 {
+  font-size: 48px;
+}
+
+.card p {
+  font-size: 21px;
 }
 
 /* Style the button */
