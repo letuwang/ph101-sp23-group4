@@ -192,10 +192,32 @@ section {
   margin-left: 0;
 }
 
-.card h2 {
+.card h3 {
   font-size: 48px;
 }
 
-.card p {
-  font-size: 21px;
+.icon-list li {
+  display: flex;
+  align-items: center;
+  color: var(--text-200);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.icon-list li i {
+  font-size: 32px;
+  margin-right: 20px;
+}
+
+.green {
+  color: #5cb85c;
+}
+
+.blue {
+  color: #005baa;
+}
+
+.red {
+  color: #d9534f;
 }
