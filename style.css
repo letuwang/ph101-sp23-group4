@@ -260,3 +260,7 @@ section {
 .red {
   color: #d9534f;
 }
+
+main > p {
+  margin-top: 20px;
+}
